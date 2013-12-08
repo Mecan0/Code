@@ -1,0 +1,96 @@
+Basado en Marlin V1 descargado el 3-dic-2013 archivo comprimido que está en esta misma carpeta.
+
+Opciones modificadas
+	
+	Selección de placa RAMPs con ventilador de capa
+	
+		#define MOTHERBOARD 33
+	
+	Termistores
+	
+		#define TEMP_SENSOR_0 1
+		#define TEMP_SENSOR_1 0
+		#define TEMP_SENSOR_2 0
+		#define TEMP_SENSOR_BED 1
+					
+	Area de impresión
+	
+		Después de algunas modificaciones el area de impresión queda:
+	
+		// Travel limits after homing
+		#define X_MAX_POS 200
+		#define X_MIN_POS 0
+		#define Y_MAX_POS 185
+		#define Y_MIN_POS 0
+		#define Z_MAX_POS 190
+		#define Z_MIN_POS 0
+		
+	Finales de carrera
+		// The position of the homing switches
+		#define MANUAL_HOME_POSITIONS  // If defined, MANUAL_*_HOME_POS below will be used
+		//#define BED_CENTER_AT_0_0  // If defined, the center of the bed is at (X=0, Y=0)
+
+		//Manual homing switch locations:
+		// For deltabots this means top and center of the cartesian print volume.
+		#define MANUAL_X_HOME_POS 0
+		#define MANUAL_Y_HOME_POS -15
+		#define MANUAL_Z_HOME_POS 0
+		
+	He puesto true el desconectar los motores Z cuando no se usan:
+	
+		#define DISABLE_Z true
+	
+	En las direcciones de los ejes se quedan como están
+	
+		#define INVERT_X_DIR true    
+		#define INVERT_Y_DIR false   
+		#define INVERT_Z_DIR true     
+		#define INVERT_E0_DIR false   
+
+	He tenido que bajar la velocidad del Homing Z porque da problemas con los motores	
+		
+		#define HOMING_FEEDRATE {50*60, 50*60, 2*60, 0}  // Antes {50*60, 50*60, 4*60, 0} set the homing speeds (mm/min)
+	
+	Pasos por milimetro
+	
+	#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,4000,910} 
+
+	Aceleraciones:
+	
+	#define DEFAULT_MAX_FEEDRATE          {250, 250, 2.5, 20}    // (mm/sec) Antes {500, 500, 5, 25}
+	#define DEFAULT_MAX_ACCELERATION      {1000,1000,50,5000}    // Por defecto {9000,9000,100,10000} X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
+
+	#define DEFAULT_ACCELERATION          500    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
+	#define DEFAULT_RETRACT_ACCELERATION  1000   // X, Y, Z and E max acceleration in mm/s^2 for retracts
+		
+	Jerk:
+	
+	#define DEFAULT_XYJERK                10.0    // (mm/sec)
+	#define DEFAULT_ZJERK                 0.2     // (mm/sec)
+	#define DEFAULT_EJERK                 5.0    // (mm/sec)
+
+	
+	He puesto el LCD de reprap discount.
+	
+	#define REPRAP_DISCOUNT_SMART_CONTROLLER
+	
+	En la pestaña Languajes he puesto el 5, Español
+	
+	En la pestaña configuration_adv he cambiado:
+	
+	// Feedrates for manual moves along X, Y, Z, E from panel
+	
+		#ifdef ULTIPANEL
+		#define MANUAL_FEEDRATE {50*60, 50*60, 2*60, 60}  // set the speeds for manual moves (mm/min)
+		#endif
+	
+	Los voltajes de los driver que tengo son:
+	
+		X=0.224
+		Y=0.310
+		Z=0.725
+		E1=0.380
+
+	
+
+	
