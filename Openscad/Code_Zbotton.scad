@@ -108,7 +108,7 @@ module redondeoXYT(){
 
 // Alojamiento del tornillo
 module tornillo(){
-	translate([5.5, 22, 13])
+	translate([5.5, 27, 13])
 	union() {
 		cube([20, hcub, hcub], center = true);
 		rotate( 90, [0, 1, 0])
@@ -147,11 +147,12 @@ module pieza(){
 
 
 // Pieza normal
-translate([0, 8, 0])
-pieza();
+	
+	translate([0, 8, 0])
+	pieza();
 
 // Pieza simetrica
-translate([0, -8, 0])
-mirror([ 0, 1, 0 ]) 
-pieza();
 
+	translate([0, -8, 0])
+	mirror([ 0, 1, 0 ]) 
+	pieza();
