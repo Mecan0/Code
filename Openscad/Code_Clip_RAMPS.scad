@@ -35,10 +35,10 @@ module base(){
 module centro(){
 	difference(){
 		// Bloque central
-		translate([0, 4, 0])
+		translate([0, 5, 0])
 		cube([4, hCen+1, 15]);
 		// Chaflán a lo largo del eje Z
-		translate([3, hCen+5, -1])
+		translate([3, hCen+6, -1])
 		rotate( -45 ,[0, 0, 1])
 		cube([2, 1, 17]);
 	}
