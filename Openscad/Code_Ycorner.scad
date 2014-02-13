@@ -12,7 +12,7 @@ dPas = 10.6;
 
 // Pieza principal a trabajar
 module bloque(){
-	cube([20, 30, 16]);	
+	cube([20, 30.5, 16]);	
 }
 
 // Taladro y redondeo en forma de U (Centrado)
@@ -30,12 +30,12 @@ module RedU(d,h,u){
 // Vaciado en forma de U para el tornillo
 module taladro(){
 	// Vaciado en forma de U (Vertical)
-	translate([10, 22.5, 8])
+	translate([10, 23, 8])
 	rotate( 90, [0, 0, 1])
 	RedU(dPas,17,8);
 	// Vaciado en forma de U (Inclinado)
-	translate([10, 19.08, 3.41])
-	rotate(-33.75, [1,0,0])
+	translate([10, 25.2, 6.819])
+	rotate(-35.75, [1,0,0])
 	rotate( 90, [0, 0, 1])
 	RedU(dPas,25,8);
 }
