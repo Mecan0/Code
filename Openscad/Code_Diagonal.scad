@@ -7,7 +7,7 @@
 // Parámetros de la pieza  /
 /**************************/
 
-dTalaX = 6.4;	//Diámetro del taladro del bloque X 
+dTalaX = 6.3;	//Diámetro del taladro del bloque X 
 
 dTalaY = 6.4;	//Diámetro del taladro del bloque Y 
 
@@ -19,7 +19,7 @@ module bloqueX(){
 		translate([0, -6, 0])
 		cube([23, 6, 32]);
 	
-		translate([14.67, 1, 8])
+		translate([15, 1, 8])
 		rotate( 90, [1, 0, 0])
 		cylinder(h = 8, r = dTalaX/2, $fn=100);
 	}
@@ -41,7 +41,7 @@ module bloqueY(){
 		translate([0, -23, 0])
 		cube([5, 23, 32]);
 
-		translate([-1, -14.66, 20])
+		translate([-1, -15, 20])
 		rotate( 90, [0, 1, 0])
 		cylinder(h = 7, r = dTalaY/2, $fn=100);
 	}
@@ -70,7 +70,7 @@ module pieza(){
 		}	
 
 		//Chaflan que afecta al bloqueX() y al redondeoXY()
-		translate([23, -7, 10.55])
+		translate([23, -7, 10.56])
 		rotate( 38, [0, -1, 0])
 		cube([18, 8, 34]);	
 	}
@@ -81,12 +81,12 @@ module pieza(){
 /**************************/
 
 // Pieza normal
-translate([0, 30, 0])
-pieza();
+
+	translate([0, 30, 0])
+	pieza();
 
 // Pieza simetrica
-translate([0, -30, 0])
-mirror([ 0, 1, 0 ]) 
-pieza();
 
-
+	translate([0, -30, 0])
+	mirror([ 0, 1, 0 ]) 
+	pieza();
