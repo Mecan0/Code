@@ -27,11 +27,16 @@ module mpieza(){
 		cube([5, 27, 16]);
 	//	Bloque pequeño
 		translate([5, -14, 0])
-		cube([1, 9, 16]);	
-	//	Redondeo
-		translate([6, -27, 8])
-		rotate( 90, [0, 1, 0])
-		cylinder(h = 5, r = 8, $fn=100);
+		cube([1, 9, 16]);
+		hull(){
+			//	Redondeo
+			translate([6, -27, 8])
+			rotate( 90, [0, 1, 0])
+			cylinder(h = 5, r = 8, $fn=100);
+			// Chaflán inferior
+			translate([6, -30.8, 0])
+			cube([5, 10, 1]);
+		}
 }
 
 // Operaciones para media pieza
@@ -46,7 +51,7 @@ module moperaciones(){
 	cylinder(h = 7, r = dTor/2, $fn=100);
 	// Chaflán interior
 	translate([6, -14, -1])
-	rotate( 232, [0, 0, -1])
+	rotate( 225, [0, 0, -1])
 	cube([2, 1, 18]);
 }
 
@@ -72,6 +77,7 @@ module tuerca(){
 	hexagono(hHex, 4);
 
 }
+
 // Creamos la pieza a partir de las operacione
 module pieza(){
 	difference () {
