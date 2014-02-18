@@ -53,7 +53,7 @@ Opciones modificadas
 	
 	Pasos por milimetro
 	
-	#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,4000,910} 
+	#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.08,80.08,4000,910} 
 
 	Aceleraciones:
 	
