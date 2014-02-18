@@ -171,9 +171,9 @@
 
 // If you are using a preconfigured hotend then you can use one of the value sets by uncommenting it
 // Ultimaker
-    #define  DEFAULT_Kp 22.2
-    #define  DEFAULT_Ki 1.08
-    #define  DEFAULT_Kd 114
+    #define  DEFAULT_Kp 18.87 //22.2
+    #define  DEFAULT_Ki 1.11 //1.08
+    #define  DEFAULT_Kd 80.37 //114
 
 // Makergear
 //    #define  DEFAULT_Kp 7.0
@@ -386,7 +386,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,4000,910}  
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.8,80.8,4000,910}  
 #define DEFAULT_MAX_FEEDRATE          {250, 250, 2.5, 20}    // (mm/sec) Antes {500, 500, 5, 25}
 #define DEFAULT_MAX_ACCELERATION      {1000,1000,50,5000}    // Por defecto {9000,9000,100,10000} X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
