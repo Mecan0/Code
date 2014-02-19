@@ -79,7 +79,7 @@ module redondeo(){
 	difference(){
 		// Relleno
 		translate([3, 15, hBase])
-		cube([15, 5, 5]);
+		cube([16, 5, 5]);
 		// Vaciado
 		translate([2, 20, hBase+5])
 		rotate( 90, [0, 1, 0])
@@ -87,6 +87,7 @@ module redondeo(){
 	}
 }
 
+// Base de la pieza en el plano X-Y
 module base(){
 	difference(){
 		union(){
@@ -110,6 +111,7 @@ module base(){
 	}
 }
 
+// Bloque de sujeción en el plano X-Z
 module sujecion(){
 	// Comando hull para unir todas las superficies 
 	hull(){
@@ -125,16 +127,17 @@ module sujecion(){
 	}
 }
 
+// Vaciado y taladro para el tornillo de sujeción
 module TTornillo(){
 	// Taladro para el tornillo
-	translate([22.2, -1, 15])
+	translate([22.2, -1, 16])
 	rotate( -90, [1, 0, 0])
 	cylinder(h = 9, r = dTor/2, $fn=100);
 	// Vaciado para la cabeza 
-	translate([22.2, 7, 15])
+	translate([22.2, 7, 16])
 	rotate( -90, [1, 0, 0])
 	cylinder(h = 6, r = 9, $fn=100);	
-	translate([13.2, 7, 15])
+	translate([13.2, 7, 16])
 	cube([18, 6, 18]);
 	// Redondeo pequeño
 	hull(){
