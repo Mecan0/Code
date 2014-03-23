@@ -9,6 +9,12 @@
 
 $fn = 100;
 
+// Cojinetes Lineales
+dCoLi = 16.2 ;	// Diámetro
+
+// Varillas lisas
+dVaLi = 8.15 ; // Diámetro
+
 
 //************************************//
 //        Módulos de uso global       //
