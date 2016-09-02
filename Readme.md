@@ -1,18 +1,128 @@
-Lista de materiales y piezas imprimibles para construirte una impresora Power Code.
-
-Las piezas estan previstas para:
-
-Rodamientos lineales Lm8uu, o casquillos Igus RMJ-08-01.
-
-Rodamientos 623 y poleas GT2 de 20 dientes.
-
-Finales de carrera de los pequeños, sin pcb.
-
-Electrónica RAMPS.
+IMPRESORA 3D POWERCODE
  
-Extrusor Greg-Wades-dviejo.
+LISTA DE MATERIALES
+ 
+MARCO COMPLETO POWERCODE CON PLATAFORMA NIVELABLE 3 PUNTOS (7 PIEZAS)
 
-Basada en la Prusa I3. También se incluyen piezas diseñadas por, o basadas, en el trabajo de Misan,
-Alberto Valero,  Diego Viejo, Obijuan, Jonas Kueling...
+
+1-. CAJA TORNILLERÍA Y PEQUEÑO MATERIAL:
+
+1 TORNILLERÍA COMPLETA (Ver despiece), 
+2 POLEAS GT2 20 DIENTES, 
+2 ACOPLADORES 5X5, 
+11 RODAMIENTOS LINEALES LM8UU 2 METÁLICOS Y 9 PLÁSTICOS, 
+4 PINZAS PARA CRISTAL, 
+2 RODAMIENTOS 685ZZ, 
+20 BRIDAS 2.5 X 100, 4 BRIDAS 3.5X150,
+2 CORREAS GT2 (850 mm Eje X y 650 mm Eje Y)
+
+
+2-. PAQUETE PLATAFORMA CALIENTE
+
+PLATAFORMA CALIENTE
+1 CRISTAL (Ver plano)
+1 LÁMINA DE CORCHO 215 X 215 y trozo.
+1 CABLE ROJO-NEGRO, TERMISTOR Y FUNDA TERMORETRÁCTIL.
+
+
+3-. VARILLAS LISAS Y ROSCADAS
+
+4 VARILLAS LISAS CALIBRADAS  ACERO F114 CROMADO 8 X 380 MM
+2 VARILLAS LISAS CALIBRADAS ACERO F114 CROMADO X 330 MM
+2 VARILLAS ROSCADAS M10X390
+2 VARILLAS ROSCADAS M5X300
+
+
+4-. SOPORTE ROLLO
+
+2 VARILLAS M8X180, TUBO GEWIS 20X220, 4 TUERCAS M8 Y ARANDELAS PIEZAS PLÁSTICAS.
+
+
+5-. EXTRUSOR Y FUSOR
+
+EXTRUSOR TITAN + HOTEND E3D LITE V6 Y CABLEADO.
+
+
+6-. MOTORES:
+
+5 MOTORES PASO A PASO MOTECH, 200 PASOS/REV, 4500 KG· CM, CON CONECTOR Y EJE FRESADO, 40 MM DE LONGITUD. REF: MT1703HS168A  160118.
+5 CABLES PARA MOTORES. 
+
+
+7-. FUENTE DE ALIMENTACIÓN
+
+1 FUENTE DE ALIMENTACIÓN 12v 20A, 
+
+
+8-. CABLEADO POTENCIA Y CONEXIÓN USB.
+
+1  CABLE ALIMENTACIÓN 230V CON ENCHUFE  SCHUCO 1M,
+1 CABLE USB  1.8M, 
+1 CABLE ALIMENTACIÓN ELECTRÓNICA 12V, 4x1MM DE 53 CM.
+1 INTERUPTOR
+
+
+9-. ELECTRÓNICA
+
+1 ELECTRÓNICA RAMPS 1.4SB
+1 ARDUINO MEGA 2560 R3,
+ 4 DRIVERS DRV8825 (32 MICROPASOS) con DISIPADORES Y FIRMWARE CARGADO.  
+
+ 
+10-. DISPLAY, BLOWER Y FINALES DE CARRERA
+
+1 DISPLAY LCD 20X4
+1 VENTILADOR RADIAL 50X50X15 12v (BLOWER) Y 1 CABLE PARA BLOWER 60 CM,
+3 FINALES DE CARRERA PCB CON CONECTOR Y CABLE DE 70 CM.
+
+
+
+11-.  TORNILLERÍA POWER CODE 3P EXTRUSOR E3D+TITAN
+	
+		
+16	Torn 3x10 para plástico	 		Para finales de carrera 9, ventilador 3, Xend 2
+12	M3x10	 DIN912		Para motores  2+2+2+3, para fuente 2.
+10	M3x16	 DIN912		Para plataforma 4, LCD 4,
+5	M3x20	 DIN912		Para ventilador 2
+10	M3x25	 DIN912		Para electrónica 3, Para LCD 2,
+ 		 		
+30	Tuercas M3	DIN934		
+30	Arandelas M3	DIN125		
+ 		 		
+2	Tornillo M5x25 	DIN933		Para tensores 2
+1	Tornillo M5x40	DIN84		Para tensor X
+2	Varillas M5x300	 		
+ 		 		
+6	Tuercas M5	DIN934		Para eje Z 2, para tensores 3,
+2	Tuercas M5 autoblocantes	DIN985		Para tensores 2
+10	Arandelas M5	DIN125		Para tensores 4x2
+8	Arandelas M5 vuelo	DIN9021		Para tensores 3x2
+ 		 		
+13	Tornillos Seta M6x20	DIN603		Para Marco 4, para diagonales 8, motor Y 1,
+2	Tornillos M6x30	DIN84		Para plataforma abajo 1 y Para tensor Y 1
+1	Tornilo de M6x35	DIN933		Para plataforma rótula 1
+2	Esparragos M6 	 		Para nivelado plataforma
+ 		 		
+30	Tuercas M6	DIN934		
+2	Tuercas M6 autoblocantes	DIN985		Para Plataforma nivelable
+20	Arandelas M6	DIN125		
+10	Arandelas M6 vuelo	DIN9021		
+ 		 		
+2	Varillas M10x390	 		Eje Y
+12	Tuercas M10	DIN934		Para varillas 12
+8	Arandelas M10	DIN125		Para varillas 8
+4	Arandelas M10 Vuelo	DIN9021		Para varillas con marco 4
+ 		 		
+ 	 	 		
+Para soporte rollo	 		
+ 		 		
+2	Varillas M8x180	 		
+4	Tuercas M8	 		
+2	Arandelas M8	 		
+1	Tubo Gewis de 20x220mm	 		
+ 	 	 		
+
+
+Basada en la Prusa I3. Xcarriage basado en el diseño de Girobot, soporte del LCD basado en Prusa Hephestos de BQ.
 
 Licencia creative commons, attribution, share alike.

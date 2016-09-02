@@ -1,0 +1,2 @@
+Repetier 0.92.9
+Para display full graphics

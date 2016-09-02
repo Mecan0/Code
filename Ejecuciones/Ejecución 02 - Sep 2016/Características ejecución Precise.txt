@@ -1,0 +1,5 @@
+Electronica RAMPS
+Extrusor Titan y hot end E3D V6
+Drivers DRV8825
+Display 20x04 en Marlin
+Display full graphics en Repetier
